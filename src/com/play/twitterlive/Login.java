@@ -26,8 +26,8 @@ public class Login extends Activity {
 
 	public static long userID;
 
-	static String TWITTER_CONSUMER_KEY = "LRPFO395APpopn5rX8f2lA";
-	static String TWITTER_CONSUMER_SECRET = "zrYKrAxmff3ok1EGkRTQyGSCcZYQm90OEobC4tvxNQ";
+	static String TWITTER_CONSUMER_KEY = "WONUBTciNbYF9IysVL1bw";
+	static String TWITTER_CONSUMER_SECRET = "pTjcUTi7OBckXbmsSXHtNKwIKKLeqTWL1PCKcvKAwTk";
 
 	public static SharedPreferences mSharedPreferences;
 
