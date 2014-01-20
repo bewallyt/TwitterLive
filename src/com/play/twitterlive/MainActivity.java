@@ -45,8 +45,8 @@ import java.util.List;
 
 public class MainActivity extends Activity implements OnClickListener {
 
-	static String TWITTER_CONSUMER_KEY = "LRPFO395APpopn5rX8f2lA";
-	static String TWITTER_CONSUMER_SECRET = "zrYKrAxmff3ok1EGkRTQyGSCcZYQm90OEobC4tvxNQ";
+	static String TWITTER_CONSUMER_KEY = "WONUBTciNbYF9IysVL1bw";
+	static String TWITTER_CONSUMER_SECRET = "pTjcUTi7OBckXbmsSXHtNKwIKKLeqTWL1PCKcvKAwTk";
 
 	static String PREFERENCE_NAME = "twitter_oauth";
 	static final String PREF_KEY_OAUTH_TOKEN = "oauth_token";
