@@ -79,6 +79,11 @@ public class Login extends Activity {
 			}
 		});
 
+		twitLive();
+
+	}
+
+	private void twitLive() {
 		if (!isTwitterLoggedInAlready()) {
 			Uri uri = getIntent().getData();
 			if (uri != null && uri.toString().startsWith(TWITTER_CALLBACK_URL)) {
@@ -117,27 +122,17 @@ public class Login extends Activity {
 
 					Log.e("Twitter OAuth Token", "> " + accessToken.getToken());
 
-					// Getting user details from twitter
-					// For now i am getting his name only
-					// long userID = accessToken.getUserId();
-					// User user = twitter.showUser(userID);
-					// String username = user.getName();
-					//
-					// System.out.println(username);
-					//
-
 				} catch (Exception e) {
 					// Check log for login errors
 					Log.e("Twitter Login Error", "> " + e.getMessage());
 				}
 			}
-		}else {
+		} else {
 			Intent startMainActivity = new Intent(getApplicationContext(),
 					MainActivity.class);
 			startActivity(startMainActivity);
 			finish();
 		}
-
 	}
 
 	// need to move shit off the main thread, keep these two lines for testing
@@ -191,54 +186,10 @@ public class Login extends Activity {
 
 	protected void onResume() {
 		super.onResume();
-		// if (!isTwitterLoggedInAlready()) {
-		// Uri uri = getIntent().getData();
-		// if (uri != null && uri.toString().startsWith(TWITTER_CALLBACK_URL)) {
-		// // oAuth verifier
-		// String verifier = uri
-		// .getQueryParameter(URL_TWITTER_OAUTH_VERIFIER);
-		//
-		// try {
-		// // Get the access token
-		// AccessToken accessToken = twitter.getOAuthAccessToken(
-		// requestToken, verifier);
-		//
-		// // Shared Preferences
-		// SharedPreferences.Editor e = mSharedPreferences.edit();
-		//
-		// // After getting access token, access token secret
-		// // store them in application preferences
-		// e.putString(PREF_KEY_OAUTH_TOKEN, accessToken.getToken());
-		// e.putString(PREF_KEY_OAUTH_SECRET,
-		// accessToken.getTokenSecret());
-		// // Store login status - true
-		// e.putBoolean(PREF_KEY_TWITTER_LOGIN, true);
-		// e.commit(); // save changes
-		//
-		// System.out.print("mSharedPreferences contains token:");
-		// System.out.println(mSharedPreferences
-		// .contains(PREF_KEY_OAUTH_TOKEN));
-		// System.out
-		// .print("mSharedPreferences contains secret token:");
-		// System.out.println(mSharedPreferences
-		// .contains(PREF_KEY_OAUTH_SECRET));
-		//
-		// System.out.println("This is the onResume");
-		//
-		// Log.e("Twitter OAuth Token", "> " + accessToken.getToken());
-		//
-		// } catch (Exception e) {
-		// // Check log for login errors
-		// Log.e("Twitter Login Error", "> " + e.getMessage());
-		// }
-		// }
-		// }
-
 	}
 
 	@Override
 	protected void onPause() {
-		// TODO Auto-generated method stub
 		super.onPause();
 		if (isTwitterLoggedInAlready()) {
 			Intent startMainActivity = new Intent(getApplicationContext(),
@@ -260,9 +211,8 @@ public class Login extends Activity {
 
 	}
 
-		@Override
+	@Override
 	protected void onStop() {
-		// TODO Auto-generated method stub
 		super.onStop();
 		finish();
 	}
