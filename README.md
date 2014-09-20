@@ -1,7 +1,7 @@
 TwitterLive
 ===========
 
-Quick Project
+Quick Android Project
 
 Benson Tran
 Andy Tran
