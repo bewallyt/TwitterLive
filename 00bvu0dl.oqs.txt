@@ -1,0 +1,33 @@
+﻿Test commit Windows #2
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   AndroidManifest.xml
+#	modified:   README.md
+#	modified:   TwitterLive.eml
+#	modified:   TwitterLive.iml
+#	modified:   TwitterLive.userlibraries
+#	modified:   ic_launcher-web.png
+#	modified:   libs/android-support-v4.jar
+#	modified:   proguard-project.txt
+#	modified:   project.properties
+#	modified:   res/drawable-hdpi/ic_launcher.png
+#	modified:   res/drawable-mdpi/ic_launcher.png
+#	modified:   res/drawable-xhdpi/ic_launcher.png
+#	modified:   res/drawable-xxhdpi/ic_launcher.png
+#	modified:   res/layout/activity_main.xml
+#	modified:   res/layout/login.xml
+#	modified:   res/menu/main.xml
+#	modified:   res/values-sw600dp/dimens.xml
+#	modified:   res/values-sw720dp-land/dimens.xml
+#	modified:   res/values-v11/styles.xml
+#	modified:   res/values-v14/styles.xml
+#	modified:   res/values/dimens.xml
+#	modified:   res/values/strings.xml
+#	modified:   res/values/styles.xml
+#	modified:   src/com/play/twitterlive/MainActivity.java
+#
+
